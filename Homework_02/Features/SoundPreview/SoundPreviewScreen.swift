@@ -25,6 +25,8 @@ struct SoundPreviewScreen: View {
                         Spacer()
                         HStack {
                             Spacer()
+                            Button("Go back") { router.pop() }
+                            Spacer()
                             Button("Play") { router.show(SoundPlayerScreen()) }
                             Spacer()
                         }
