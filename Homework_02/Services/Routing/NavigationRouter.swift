@@ -15,17 +15,18 @@ struct NavigationRouter<Content> : View where Content : View {
     
     private let content: Content
     
-    init(@ViewBuilder _ content: @escaping () -> Content) {
+    init?(@ViewBuilder _ content: @escaping () -> Content) {
+        guard let controller = try? Services.inject(NavigationController.self) else { return nil }
         self.content = content()
-        self.controller = NavigationController()
+        self.controller = controller
         self.viewModel = controller.viewModel
     }
     
     var body: some View {
         if viewModel.atRoot {
-            show(rootScreen: content).environmentObject(controller)
+            show(rootScreen: content)
         } else {
-            viewModel.currentScreen.environmentObject(controller)
+            viewModel.currentScreen
         }
     }
     

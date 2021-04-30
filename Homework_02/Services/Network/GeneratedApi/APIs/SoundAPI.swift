@@ -17,7 +17,7 @@ open class SoundAPI {
      - parameter soundId: (path) ID of the sound that needs to be fetched 
      - parameter completion: completion handler to receive the data and the error objects
      */
-    open class func getSoundById(soundId: Int64, completion: @escaping ((_ data: Sound?,_ error: Error?) -> Void)) {
+    open func getSoundById(soundId: Int64, completion: @escaping ((_ data: Sound?,_ error: Error?) -> Void)) {
         getSoundByIdWithRequestBuilder(soundId: soundId).execute { (response, error) -> Void in
             completion(response?.body, error)
         }
@@ -51,7 +51,7 @@ open class SoundAPI {
 
      - returns: RequestBuilder<Sound> 
      */
-    open class func getSoundByIdWithRequestBuilder(soundId: Int64) -> RequestBuilder<Sound> {
+    open func getSoundByIdWithRequestBuilder(soundId: Int64) -> RequestBuilder<Sound> {
         var path = "/sounds/{soundId}"
         let soundIdPreEscape = "\(soundId)"
         let soundIdPostEscape = soundIdPreEscape.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? ""

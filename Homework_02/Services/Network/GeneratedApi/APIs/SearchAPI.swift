@@ -37,7 +37,7 @@ open class SearchAPI {
      - parameter pageSize: (query) Indicates the number of sounds per page to include in the result. By default &#x60;page_size&#x3D;15&#x60;, and the maximum is &#x60;page_size&#x3D;150&#x60;. Not that with bigger &#x60;page_size&#x60;, more data will need to be transferred. (optional, default to 15)
      - parameter completion: completion handler to receive the data and the error objects
      */
-    open class func searchText(query: String? = nil, filter: String? = nil, sort: Sort_searchText? = nil, groupByPack: Int? = nil, page: Int? = nil, pageSize: Int? = nil, completion: @escaping ((_ data: SoundList?,_ error: Error?) -> Void)) {
+    open func searchText(query: String? = nil, filter: String? = nil, sort: Sort_searchText? = nil, groupByPack: Int? = nil, page: Int? = nil, pageSize: Int? = nil, completion: @escaping ((_ data: SoundList?,_ error: Error?) -> Void)) {
         searchTextWithRequestBuilder(query: query, filter: filter, sort: sort, groupByPack: groupByPack, page: page, pageSize: pageSize).execute { (response, error) -> Void in
             completion(response?.body, error)
         }
@@ -84,7 +84,7 @@ open class SearchAPI {
 
      - returns: RequestBuilder<SoundList>
      */
-    open class func searchTextWithRequestBuilder(query: String? = nil, filter: String? = nil, sort: Sort_searchText? = nil, groupByPack: Int? = nil, page: Int? = nil, pageSize: Int? = nil) -> RequestBuilder<SoundList> {
+    open func searchTextWithRequestBuilder(query: String? = nil, filter: String? = nil, sort: Sort_searchText? = nil, groupByPack: Int? = nil, page: Int? = nil, pageSize: Int? = nil) -> RequestBuilder<SoundList> {
         let path = "/search/text/"
         let URLString = SwaggerClientAPI.basePath + path
         let parameters: [String:Any]? = nil

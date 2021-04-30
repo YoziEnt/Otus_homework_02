@@ -9,14 +9,14 @@ import SwiftUI
 
 struct SoundPlayerScreen: View {
     
-    @EnvironmentObject var router: NavigationController
+    private let router: NavigationController? = try? Services.inject(NavigationController.self)
     
     var body: some View {
         HStack {
             Spacer()
-            Button("go back") { router.pop() }
+            Button("go back") { router?.pop() }
             Spacer()
-            Button("to root") { router.toRoot() }
+            Button("to root") { router?.toRoot() }
             Spacer()
         }
     }

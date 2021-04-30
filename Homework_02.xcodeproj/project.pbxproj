@@ -10,6 +10,8 @@
 		CD248D8F26136E4200108523 /* GenrePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD248D8E26136E4200108523 /* GenrePickerView.swift */; };
 		CD248D962613888300108523 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD248D952613888300108523 /* NavigationRouter.swift */; };
 		CD248D9D2613BBF600108523 /* SoundPlayerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD248D9C2613BBF600108523 /* SoundPlayerScreen.swift */; };
+		CD42D05B263C94A8002E3727 /* ServicesLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD42D05A263C94A8002E3727 /* ServicesLocator.swift */; };
+		CD42D05F263C9C5C002E3727 /* Exception.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD42D05E263C9C5C002E3727 /* Exception.swift */; };
 		CD67EF47260E443F0089709E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67EF38260E443F0089709E /* Models.swift */; };
 		CD67EF48260E443F0089709E /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67EF39260E443F0089709E /* APIHelper.swift */; };
 		CD67EF49260E443F0089709E /* JSONEncodingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67EF3A260E443F0089709E /* JSONEncodingHelper.swift */; };
@@ -42,6 +44,8 @@
 		CD248D8E26136E4200108523 /* GenrePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePickerView.swift; sourceTree = "<group>"; };
 		CD248D952613888300108523 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
 		CD248D9C2613BBF600108523 /* SoundPlayerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayerScreen.swift; sourceTree = "<group>"; };
+		CD42D05A263C94A8002E3727 /* ServicesLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesLocator.swift; sourceTree = "<group>"; };
+		CD42D05E263C9C5C002E3727 /* Exception.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exception.swift; sourceTree = "<group>"; };
 		CD67EF38260E443F0089709E /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		CD67EF39260E443F0089709E /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		CD67EF3A260E443F0089709E /* JSONEncodingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodingHelper.swift; sourceTree = "<group>"; };
@@ -89,6 +93,32 @@
 				CD248D9C2613BBF600108523 /* SoundPlayerScreen.swift */,
 			);
 			path = SoundPlayer;
+			sourceTree = "<group>";
+		};
+		CD42D056263C93FC002E3727 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CD42D058263C947E002E3727 /* DI */,
+				CD42D057263C945D002E3727 /* Routing */,
+				CD67EF2B260E43FB0089709E /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CD42D057263C945D002E3727 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				CD248D952613888300108523 /* NavigationRouter.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		CD42D058263C947E002E3727 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				CD42D05A263C94A8002E3727 /* ServicesLocator.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 		CD67EF2B260E43FB0089709E /* Network */ = {
@@ -155,7 +185,7 @@
 		CD9C7190260E33F200444519 /* Homework_02 */ = {
 			isa = PBXGroup;
 			children = (
-				CD67EF2B260E43FB0089709E /* Network */,
+				CD42D056263C93FC002E3727 /* Services */,
 				CDC7F2DC26121D6B006D0B45 /* Commons */,
 				CDC7F2BE26120890006D0B45 /* Features */,
 				CD9C7191260E33F200444519 /* Homework_02App.swift */,
@@ -217,6 +247,7 @@
 			children = (
 				CDC7F2E226126A70006D0B45 /* UIComponents */,
 				CDC7F2DD26121D7F006D0B45 /* RandomAccessCollection.swift */,
+				CD42D05E263C9C5C002E3727 /* Exception.swift */,
 			);
 			name = Commons;
 			sourceTree = "<group>";
@@ -225,7 +256,6 @@
 			isa = PBXGroup;
 			children = (
 				CDC7F2E326126A81006D0B45 /* ActivityIndicatorView.swift */,
-				CD248D952613888300108523 /* NavigationRouter.swift */,
 			);
 			name = UIComponents;
 			sourceTree = "<group>";
@@ -314,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD42D05B263C94A8002E3727 /* ServicesLocator.swift in Sources */,
 				CDC7F2C1261208C1006D0B45 /* SoundListViewModel.swift in Sources */,
 				CD67EF53260E443F0089709E /* JSONEncodableEncoding.swift in Sources */,
 				CD67EF48260E443F0089709E /* APIHelper.swift in Sources */,
@@ -326,6 +357,7 @@
 				CDC7F2DE26121D7F006D0B45 /* RandomAccessCollection.swift in Sources */,
 				CD248D962613888300108523 /* NavigationRouter.swift in Sources */,
 				CDC7F2C826120AB7006D0B45 /* SoundListScreen.swift in Sources */,
+				CD42D05F263C9C5C002E3727 /* Exception.swift in Sources */,
 				CD248D9D2613BBF600108523 /* SoundPlayerScreen.swift in Sources */,
 				CD67EF49260E443F0089709E /* JSONEncodingHelper.swift in Sources */,
 				CD67EF50260E443F0089709E /* Configuration.swift in Sources */,

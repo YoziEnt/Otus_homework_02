@@ -9,9 +9,21 @@ import SwiftUI
 
 @main
 struct Homework_02App: App {
+    
+    init() {
+        configurateApp()
+    }
+    
+    private func configurateApp() {
+        Services.add(SoundAPI.self) { SoundAPI() }
+        Services.add(SearchAPI.self) { SearchAPI() }
+        Services.add(NavigationController.self, injection: .singleton) { NavigationController() }
+    }
+    
     var body: some Scene {
         WindowGroup {
             RootView()
         }
     }
+    
 }

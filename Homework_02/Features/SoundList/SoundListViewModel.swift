@@ -14,6 +14,8 @@ final class SoundListViewModel: ObservableObject {
     @Published private(set) var isPageLoading: Bool = false
     @Published var genre: Genre = .rock { didSet { genreDidChange() } }
     
+    private let searchApi: SearchAPI? = try? Services.inject(SearchAPI.self)
+    
     var noSounds: Bool { sounds.isEmpty }
     
     func isSoundLast(_ sound: Sound) -> Bool { sounds.isLast(sound) }
@@ -22,7 +24,7 @@ final class SoundListViewModel: ObservableObject {
         guard !(isPageLoading) else { return }
         isPageLoading = true
         pageNumber += 1
-        SearchAPI.searchText(filter: genre.rawValue, page: pageNumber)  { response, error in
+        searchApi?.searchText(filter: genre.rawValue, page: pageNumber)  { response, error in
             defer { self.isPageLoading = false }
             guard let results = response?.results else { return }
             self.sounds.append(contentsOf: results)

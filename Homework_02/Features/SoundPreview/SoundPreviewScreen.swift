@@ -12,7 +12,7 @@ struct SoundPreviewScreen: View {
     @State var id: Int64?
     
     @ObservedObject var viewModel = SoundPreviewViewModel.init()
-    @EnvironmentObject var router: NavigationController
+    private let router: NavigationController? = try? Services.inject(NavigationController.self)
     
     var body: some View {
         VStack {
@@ -25,9 +25,9 @@ struct SoundPreviewScreen: View {
                         Spacer()
                         HStack {
                             Spacer()
-                            Button("Go back") { router.pop() }
+                            Button("Go back") { router?.pop() }
                             Spacer()
-                            Button("Play") { router.show(SoundPlayerScreen()) }
+                            Button("Play") { router?.show(SoundPlayerScreen()) }
                             Spacer()
                         }
                         Spacer()
