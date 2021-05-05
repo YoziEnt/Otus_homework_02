@@ -9,12 +9,13 @@ import SwiftUI
 
 struct SoundListView: View {
 
-    @ObservedObject var viewModel: SoundListViewModel
     private let router: NavigationController? = try? Services.inject(NavigationController.self)
+    
+    @ObservedObject var viewModel: SoundListViewModel
     
     var body: some View {
         
-        if viewModel.noSounds {
+        if viewModel.isNoSounds {
             ActivityIndicatorView()
         } else {
             List(viewModel.sounds) { sound in cell(for: sound) }

@@ -15,8 +15,8 @@
 		CD67EF47260E443F0089709E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67EF38260E443F0089709E /* Models.swift */; };
 		CD67EF48260E443F0089709E /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67EF39260E443F0089709E /* APIHelper.swift */; };
 		CD67EF49260E443F0089709E /* JSONEncodingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67EF3A260E443F0089709E /* JSONEncodingHelper.swift */; };
-		CD67EF4A260E443F0089709E /* SoundAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67EF3C260E443F0089709E /* SoundAPI.swift */; };
-		CD67EF4B260E443F0089709E /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67EF3D260E443F0089709E /* SearchAPI.swift */; };
+		CD67EF4A260E443F0089709E /* ActualSoundAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67EF3C260E443F0089709E /* ActualSoundAPI.swift */; };
+		CD67EF4B260E443F0089709E /* ActualSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67EF3D260E443F0089709E /* ActualSearchAPI.swift */; };
 		CD67EF4C260E443F0089709E /* JSONValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67EF3E260E443F0089709E /* JSONValue.swift */; };
 		CD67EF4D260E443F0089709E /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67EF40260E443F0089709E /* Sound.swift */; };
 		CD67EF4E260E443F0089709E /* CodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67EF41260E443F0089709E /* CodableHelper.swift */; };
@@ -26,10 +26,14 @@
 		CD67EF52260E443F0089709E /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67EF45260E443F0089709E /* AlamofireImplementations.swift */; };
 		CD67EF53260E443F0089709E /* JSONEncodableEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD67EF46260E443F0089709E /* JSONEncodableEncoding.swift */; };
 		CD67EF5D260E47AB0089709E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CD67EF5C260E47AB0089709E /* Alamofire */; };
+		CD98918D2643093A00AFF747 /* SoundApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98918C2643093A00AFF747 /* SoundApi.swift */; };
+		CD9891902643094C00AFF747 /* SearchApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD98918F2643094C00AFF747 /* SearchApi.swift */; };
 		CD9C7192260E33F200444519 /* Homework_02App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9C7191260E33F200444519 /* Homework_02App.swift */; };
 		CD9C7194260E33F200444519 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9C7193260E33F200444519 /* RootView.swift */; };
 		CD9C7196260E33F500444519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD9C7195260E33F500444519 /* Assets.xcassets */; };
 		CD9C7199260E33F500444519 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD9C7198260E33F500444519 /* Preview Assets.xcassets */; };
+		CDBF2C8A2643101C00CB4088 /* SoundPreviewRoutingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBF2C892643101C00CB4088 /* SoundPreviewRoutingSheet.swift */; };
+		CDBF2C922643168F00CB4088 /* SoundPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBF2C912643168F00CB4088 /* SoundPreview.swift */; };
 		CDC7F2C1261208C1006D0B45 /* SoundListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC7F2C0261208C1006D0B45 /* SoundListViewModel.swift */; };
 		CDC7F2C4261209B8006D0B45 /* SoundListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC7F2C3261209B8006D0B45 /* SoundListView.swift */; };
 		CDC7F2C826120AB7006D0B45 /* SoundListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC7F2C726120AB7006D0B45 /* SoundListScreen.swift */; };
@@ -49,8 +53,8 @@
 		CD67EF38260E443F0089709E /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		CD67EF39260E443F0089709E /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
 		CD67EF3A260E443F0089709E /* JSONEncodingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodingHelper.swift; sourceTree = "<group>"; };
-		CD67EF3C260E443F0089709E /* SoundAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundAPI.swift; sourceTree = "<group>"; };
-		CD67EF3D260E443F0089709E /* SearchAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
+		CD67EF3C260E443F0089709E /* ActualSoundAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActualSoundAPI.swift; sourceTree = "<group>"; };
+		CD67EF3D260E443F0089709E /* ActualSearchAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActualSearchAPI.swift; sourceTree = "<group>"; };
 		CD67EF3E260E443F0089709E /* JSONValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONValue.swift; sourceTree = "<group>"; };
 		CD67EF40260E443F0089709E /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		CD67EF41260E443F0089709E /* CodableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableHelper.swift; sourceTree = "<group>"; };
@@ -59,12 +63,16 @@
 		CD67EF44260E443F0089709E /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
 		CD67EF45260E443F0089709E /* AlamofireImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireImplementations.swift; sourceTree = "<group>"; };
 		CD67EF46260E443F0089709E /* JSONEncodableEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodableEncoding.swift; sourceTree = "<group>"; };
+		CD98918C2643093A00AFF747 /* SoundApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundApi.swift; sourceTree = "<group>"; };
+		CD98918F2643094C00AFF747 /* SearchApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchApi.swift; sourceTree = "<group>"; };
 		CD9C718E260E33F200444519 /* Homework_02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework_02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9C7191260E33F200444519 /* Homework_02App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework_02App.swift; sourceTree = "<group>"; };
 		CD9C7193260E33F200444519 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		CD9C7195260E33F500444519 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD9C7198260E33F500444519 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD9C719A260E33F500444519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDBF2C892643101C00CB4088 /* SoundPreviewRoutingSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPreviewRoutingSheet.swift; sourceTree = "<group>"; };
+		CDBF2C912643168F00CB4088 /* SoundPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPreview.swift; sourceTree = "<group>"; };
 		CDC7F2C0261208C1006D0B45 /* SoundListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundListViewModel.swift; sourceTree = "<group>"; };
 		CDC7F2C3261209B8006D0B45 /* SoundListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundListView.swift; sourceTree = "<group>"; };
 		CDC7F2C726120AB7006D0B45 /* SoundListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundListScreen.swift; sourceTree = "<group>"; };
@@ -125,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				CD67EF2C260E43FB0089709E /* GeneratedApi */,
+				CD98918C2643093A00AFF747 /* SoundApi.swift */,
+				CD98918F2643094C00AFF747 /* SearchApi.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -151,8 +161,8 @@
 		CD67EF3B260E443F0089709E /* APIs */ = {
 			isa = PBXGroup;
 			children = (
-				CD67EF3C260E443F0089709E /* SoundAPI.swift */,
-				CD67EF3D260E443F0089709E /* SearchAPI.swift */,
+				CD67EF3C260E443F0089709E /* ActualSoundAPI.swift */,
+				CD67EF3D260E443F0089709E /* ActualSearchAPI.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -163,6 +173,22 @@
 				CD67EF40260E443F0089709E /* Sound.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CD98919426430B5700AFF747 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD9C7195260E33F500444519 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD98919526430B6B00AFF747 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				CDC7F2D026120F43006D0B45 /* Entities.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		CD9C7185260E33F200444519 = {
@@ -185,13 +211,13 @@
 		CD9C7190260E33F200444519 /* Homework_02 */ = {
 			isa = PBXGroup;
 			children = (
-				CD42D056263C93FC002E3727 /* Services */,
-				CDC7F2DC26121D6B006D0B45 /* Commons */,
-				CDC7F2BE26120890006D0B45 /* Features */,
 				CD9C7191260E33F200444519 /* Homework_02App.swift */,
 				CD9C7193260E33F200444519 /* RootView.swift */,
-				CDC7F2D026120F43006D0B45 /* Entities.swift */,
-				CD9C7195260E33F500444519 /* Assets.xcassets */,
+				CDC7F2BE26120890006D0B45 /* Features */,
+				CD42D056263C93FC002E3727 /* Services */,
+				CDC7F2DC26121D6B006D0B45 /* Toolkit */,
+				CD98919526430B6B00AFF747 /* Entities */,
+				CD98919426430B5700AFF747 /* Resources */,
 				CD9C719A260E33F500444519 /* Info.plist */,
 				CD9C7197260E33F500444519 /* Preview Content */,
 			);
@@ -213,12 +239,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CDBF2C8D264314BA00CB4088 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CDBF2C892643101C00CB4088 /* SoundPreviewRoutingSheet.swift */,
+				CDBF2C912643168F00CB4088 /* SoundPreview.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		CDC7F2BE26120890006D0B45 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				CD248D9B2613BBE300108523 /* SoundPlayer */,
-				CDC7F2E626126B0F006D0B45 /* SoundPreview */,
 				CDC7F2BF26120899006D0B45 /* SoundList */,
+				CDC7F2E626126B0F006D0B45 /* SoundPreview */,
+				CD248D9B2613BBE300108523 /* SoundPlayer */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -242,14 +277,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		CDC7F2DC26121D6B006D0B45 /* Commons */ = {
+		CDC7F2DC26121D6B006D0B45 /* Toolkit */ = {
 			isa = PBXGroup;
 			children = (
 				CDC7F2E226126A70006D0B45 /* UIComponents */,
 				CDC7F2DD26121D7F006D0B45 /* RandomAccessCollection.swift */,
 				CD42D05E263C9C5C002E3727 /* Exception.swift */,
 			);
-			name = Commons;
+			name = Toolkit;
 			sourceTree = "<group>";
 		};
 		CDC7F2E226126A70006D0B45 /* UIComponents */ = {
@@ -263,6 +298,7 @@
 		CDC7F2E626126B0F006D0B45 /* SoundPreview */ = {
 			isa = PBXGroup;
 			children = (
+				CDBF2C8D264314BA00CB4088 /* Components */,
 				CDC7F2E726126B2A006D0B45 /* SoundPreviewScreen.swift */,
 				CDC7F2EA26126E79006D0B45 /* SoundPreviewViewModel.swift */,
 			);
@@ -349,11 +385,13 @@
 				CD67EF53260E443F0089709E /* JSONEncodableEncoding.swift in Sources */,
 				CD67EF48260E443F0089709E /* APIHelper.swift in Sources */,
 				CD67EF4C260E443F0089709E /* JSONValue.swift in Sources */,
-				CD67EF4B260E443F0089709E /* SearchAPI.swift in Sources */,
+				CD67EF4B260E443F0089709E /* ActualSearchAPI.swift in Sources */,
 				CD67EF47260E443F0089709E /* Models.swift in Sources */,
+				CDBF2C8A2643101C00CB4088 /* SoundPreviewRoutingSheet.swift in Sources */,
 				CDC7F2E826126B2A006D0B45 /* SoundPreviewScreen.swift in Sources */,
 				CD9C7194260E33F200444519 /* RootView.swift in Sources */,
 				CDC7F2C4261209B8006D0B45 /* SoundListView.swift in Sources */,
+				CD9891902643094C00AFF747 /* SearchApi.swift in Sources */,
 				CDC7F2DE26121D7F006D0B45 /* RandomAccessCollection.swift in Sources */,
 				CD248D962613888300108523 /* NavigationRouter.swift in Sources */,
 				CDC7F2C826120AB7006D0B45 /* SoundListScreen.swift in Sources */,
@@ -361,13 +399,15 @@
 				CD248D9D2613BBF600108523 /* SoundPlayerScreen.swift in Sources */,
 				CD67EF49260E443F0089709E /* JSONEncodingHelper.swift in Sources */,
 				CD67EF50260E443F0089709E /* Configuration.swift in Sources */,
-				CD67EF4A260E443F0089709E /* SoundAPI.swift in Sources */,
+				CD67EF4A260E443F0089709E /* ActualSoundAPI.swift in Sources */,
 				CD248D8F26136E4200108523 /* GenrePickerView.swift in Sources */,
 				CD67EF52260E443F0089709E /* AlamofireImplementations.swift in Sources */,
 				CDC7F2EB26126E79006D0B45 /* SoundPreviewViewModel.swift in Sources */,
 				CD67EF4D260E443F0089709E /* Sound.swift in Sources */,
+				CDBF2C922643168F00CB4088 /* SoundPreview.swift in Sources */,
 				CD67EF4E260E443F0089709E /* CodableHelper.swift in Sources */,
 				CDC7F2E426126A81006D0B45 /* ActivityIndicatorView.swift in Sources */,
+				CD98918D2643093A00AFF747 /* SoundApi.swift in Sources */,
 				CD67EF4F260E443F0089709E /* Extensions.swift in Sources */,
 				CDC7F2D6261214C8006D0B45 /* Entities.swift in Sources */,
 				CD9C7192260E33F200444519 /* Homework_02App.swift in Sources */,

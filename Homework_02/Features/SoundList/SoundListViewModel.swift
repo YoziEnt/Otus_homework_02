@@ -9,14 +9,14 @@ import SwiftUI
 
 final class SoundListViewModel: ObservableObject {
     
+    private let searchApi: SearchApi? = try? Services.inject(SearchApi.self)
+    
     @Published private(set) var sounds: [Sound] = .init()
     @Published private(set) var pageNumber: Int = 0
     @Published private(set) var isPageLoading: Bool = false
     @Published var genre: Genre = .rock { didSet { genreDidChange() } }
     
-    private let searchApi: SearchAPI? = try? Services.inject(SearchAPI.self)
-    
-    var noSounds: Bool { sounds.isEmpty }
+    var isNoSounds: Bool { sounds.isEmpty }
     
     func isSoundLast(_ sound: Sound) -> Bool { sounds.isLast(sound) }
     

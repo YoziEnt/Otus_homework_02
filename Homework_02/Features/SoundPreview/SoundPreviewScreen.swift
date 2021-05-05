@@ -9,27 +9,19 @@ import SwiftUI
 
 struct SoundPreviewScreen: View {
     
-    @State var id: Int64?
-    
     @ObservedObject var viewModel = SoundPreviewViewModel.init()
-    private let router: NavigationController? = try? Services.inject(NavigationController.self)
+    
+    @State var id: Int64?
     
     var body: some View {
         VStack {
-            if isDownloading { ActivityIndicatorView() }
-            else {
+            if isDownloading {
+                ActivityIndicatorView()
+            } else {
                 NavigationView {
                     VStack(alignment: .leading) {
-                        if let desc = viewModel.sound?.desc { textView(desc) }
-                        if let duration = viewModel.sound?.duration { textView("duration: \(duration)") }
-                        Spacer()
-                        HStack {
-                            Spacer()
-                            Button("Go back") { router?.pop() }
-                            Spacer()
-                            Button("Play") { router?.show(SoundPlayerScreen()) }
-                            Spacer()
-                        }
+                        SoundPreview(viewModel.sound)
+                        SoundPreviewRoutingSheet()
                         Spacer()
                     }.navigationTitle(Text(title))
                     
@@ -40,11 +32,8 @@ struct SoundPreviewScreen: View {
         }
     }
     
-    private func textView(_ text: String) -> some View {
-        HStack { Text(text); Spacer() }.padding(20)
-    }
-    
     private var isDownloading: Bool { id == nil || viewModel.isPageLoading }
     private var title: String { viewModel.sound?.name ?? "Something went wrong" }
+    
 }
 

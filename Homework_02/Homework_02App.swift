@@ -15,8 +15,8 @@ struct Homework_02App: App {
     }
     
     private func configurateApp() {
-        Services.add(SoundAPI.self) { SoundAPI() }
-        Services.add(SearchAPI.self) { SearchAPI() }
+        Services.add(SoundApi.self) { ActualSoundApi() }
+        Services.add(SearchApi.self) { ActualSearchApi() }
         Services.add(NavigationController.self, injection: .singleton) { NavigationController() }
     }
     
